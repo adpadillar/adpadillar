@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import Post from "../components/Post.astro";
+
+const allPosts = await getCollection("blog");
+---
+
+<Layout title="Axel Padilla - Blog">
+  <main class="flex justify-center items-center my-4">
+    <div
+      class="max-w-2xl min-w-0 px-4 flex flex-col w-full justify-start font-serif"
+    >
+      <h1
+        class="text-4xl font-extrabold pb-4 dark:text-stone-200 text-stone-800"
+      >
+        Posts
+      </h1>
+      <div class="mt-8 md:mt-4">
+        {
+          allPosts.length == 0 && (
+            <p class="text-lg dark:text-stone-200 text-stone-800">
+              No posts yet.
+            </p>
+          )
+        }
+        {allPosts.map((post) => <Post post={post} />)}
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style is:global>
+  .MathJax[display="true"][jax="SVG"] {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .MathJax[jax="SVG"] {
+    display: inline-block !important;
+    vertical-align: middle !important;
+  }
+</style>

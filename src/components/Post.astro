@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from "astro:content";
+import readingTime from "../utils/readingTime";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+---
+
+<a rel="prefetch" href={`/${post.slug}`} class="group">
+  <div class="md:pb-8 pb-12">
+    <p class="dark:text-gray-300 text-gray-700 font-light text-sm">
+      {
+        post.data.publishDate.toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        })
+      } • {readingTime(post.body)}
+    </p>
+
+    <h2
+      class="text-2xl font-black dark:text-gray-200 text-gray-800 my-1 group-hover:underline"
+    >
+      {post.data.title}
+    </h2>
+    <p class="dark:text-gray-300/80 text-gray-600 font-light mt-2">
+      {post.data.description}
+    </p>
+  </div>
+</a>
