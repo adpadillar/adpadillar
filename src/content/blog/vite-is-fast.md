@@ -1,5 +1,5 @@
 ---
-title: How I made the deploys to my old website 60% faster 🚀
+title: How I made the deploys to my old website 60% faster
 publishDate: February 11, 2023
 description: I started this site nearly 2 years ago using Create React App when I didn't know any better. Yesterday I migrated to Vite and was amazed by the performance and DX gains without putting in that much work.
 image: https://res.cloudinary.com/practicaldev/image/fetch/s--8eIAvTRd--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nvi1wa2sy5wnmsjhf239.jpg
