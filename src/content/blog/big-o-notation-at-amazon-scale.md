@@ -1,10 +1,10 @@
 ---
 title: An overview of Big O Notation and an example at Amazon scale
 publishDate: February 3, 2023
-description: In computer science, we use Big O Notation describes how the runtime of an algorithm scales as it's input size gets bigger. This matters a lot, speacially when you're dealing with the scale of a company like Amazon.
+description: In computer science, Big O Notation describes how the runtime of an algorithm scales as it's input size gets bigger. This matters a lot, speacially when you're dealing with the scale of a company like Amazon.
 ---
 
-**In computer science, we use Big O Notation describes how the runtime of an algorithm scales as it's input size gets bigger. This matters a lot, speacially when you're dealing with the scale of a company like Amazon.**
+**In computer science, Big O Notation describes how the runtime of an algorithm scales as it's input size gets bigger. This matters a lot, speacially when you're dealing with the scale of a company like Amazon.**
 
 ## What is Big O Notation
 
