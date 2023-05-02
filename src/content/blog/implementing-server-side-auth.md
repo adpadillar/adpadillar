@@ -141,7 +141,7 @@ const signIn = async (o: {
 
 const signOut = async (o: { onSuccess?: () => void }) => {
   await auth.signOut();
-  deleteCookie("authToken");
+  deleteCookie("idToken");
 
   if (o.onSuccess) o.onSuccess();
 };
