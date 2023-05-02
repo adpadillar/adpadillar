@@ -2,6 +2,7 @@
 title: Implementing Server Side Auth With Firebase and Next.js
 publishDate: May 2, 2023
 description: I was recently working on a Next.js Application. I normally use firebase-auth for authentication, but the main library runs client side, and I needed to implement server side authentication. Here's how I did it.
+image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fproxy%2F1*zTdZMxbTkVdXCOoZlXLnsg.png&f=1&nofb=1&ipt=6fcd7927ae9a31a1dcb6956a14ea5f4aed1f392230c1673f89bb467a6b8ef484&ipo=images
 ---
 
 **I was recently working on a Next.js Application. I normally use firebase-auth for authentication, but the main library runs client side, and I needed to implement server side authentication. Here's how I did it.**
