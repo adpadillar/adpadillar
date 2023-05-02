@@ -19,8 +19,12 @@ import astroPrefetch from "@astrojs/prefetch";
 import react from "@astrojs/react";
 
 // https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), mdx(), astroPrefetch(), react()],
+  integrations: [tailwind(), mdx(), astroPrefetch(), react(), sitemap()],
+  site: "https://blog.axelpadilla.me",
   markdown: {
     shikiConfig: {
       theme: "one-dark-pro",

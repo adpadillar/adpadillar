@@ -4,6 +4,7 @@ specifiers:
   '@astrojs/mdx': ^0.15.1
   '@astrojs/prefetch': ^0.1.1
   '@astrojs/react': ^2.0.2
+  '@astrojs/sitemap': ^1.2.2
   '@astrojs/tailwind': ^3.0.0
   '@tailwindcss/typography': ^0.5.9
   '@types/react': ^18.0.21
@@ -23,6 +24,7 @@ dependencies:
   '@astrojs/mdx': 0.15.1_astro@2.0.2
   '@astrojs/prefetch': 0.1.1
   '@astrojs/react': 2.0.2_fxtgt6bjwd6p4cwoordejim2zi
+  '@astrojs/sitemap': 1.2.2
   '@astrojs/tailwind': 3.0.0_uhsc6pehih5huiqhsy5i7sy5um
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
@@ -156,6 +158,13 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@astrojs/sitemap/1.2.2:
+    resolution: {integrity: sha512-rjgFEPzETMVYgOMECIFP2vCkwzF9nLB31/6XWN548IeU/IlFgYR28RbsGTIjUElDak/9AF3jzjtzyldAZger3Q==}
+    dependencies:
+      sitemap: 7.1.1
+      zod: 3.20.2
     dev: false
 
   /@astrojs/tailwind/3.0.0_uhsc6pehih5huiqhsy5i7sy5um:
@@ -876,6 +885,10 @@ packages:
       '@types/unist': 2.0.6
     dev: false
 
+  /@types/node/17.0.45:
+    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+    dev: false
+
   /@types/parse5/6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
     dev: false
@@ -900,6 +913,12 @@ packages:
 
   /@types/resolve/1.20.2:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
+    dev: false
+
+  /@types/sax/1.2.4:
+    resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
+    dependencies:
+      '@types/node': 17.0.45
     dev: false
 
   /@types/scheduler/0.16.2:
@@ -3558,6 +3577,10 @@ packages:
       suf-log: 2.5.3
     dev: false
 
+  /sax/1.2.4:
+    resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    dev: false
+
   /saxes/5.0.1:
     resolution: {integrity: sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==}
     engines: {node: '>=10'}
@@ -3622,6 +3645,17 @@ packages:
 
   /sisteransi/1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+    dev: false
+
+  /sitemap/7.1.1:
+    resolution: {integrity: sha512-mK3aFtjz4VdJN0igpIJrinf3EO8U8mxOPsTBzSsy06UtjZQJ3YY3o3Xa7zSc5nMqcMrRwlChHZ18Kxg0caiPBg==}
+    engines: {node: '>=12.0.0', npm: '>=5.6.0'}
+    hasBin: true
+    dependencies:
+      '@types/node': 17.0.45
+      '@types/sax': 1.2.4
+      arg: 5.0.2
+      sax: 1.2.4
     dev: false
 
   /slash/4.0.0:
