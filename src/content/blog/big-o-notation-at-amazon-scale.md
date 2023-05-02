@@ -1,6 +1,6 @@
 ---
 title: An overview of Big O Notation and an example at Amazon scale
-publishDate: February 3, 2023
+publishDate: February 2, 2023
 description: In computer science, Big O Notation describes how the runtime of an algorithm scales as it's input size gets bigger. This matters a lot, speacially when you're dealing with the scale of a company like Amazon.
 ---
 
@@ -37,11 +37,11 @@ As you can see, no matter how separate the initial points of the functions are, 
 
 Amazon is a Cloud Company first, with AWS accounting for most of it's revenue. They sometimes need to transfer huge amounts of data from a customer to it's servers, a process which you can imagine takes $O(n)$ time. The more data there is, the more time it will take for it to be sent to Amazon's datacenters. When you're working with petabytes and petabytes of data, $O(n)$ may still be too slow.
 
-Amazon found a way around this problem, a way to transfer data at $O(1)$ time! How did they do this? What was the clever algorithm they discovered to transfer data in constant time? The answer may be a little bit surprising: *trucks*.
+Amazon found a way around this problem, a way to transfer data at $O(1)$ time! How did they do this? What was the clever algorithm they discovered to transfer data in constant time? The answer may be a little bit surprising: _trucks_.
 
 ## AWS Snowball
 
-Yes, you read right, trucks. Amazon sends a truck and physically loads the customer's data all at once. It takes the drives from the customer to it's datacenters with a service they call [AWS Snowball](https://aws.amazon.com/snowball/), and it takes (roughly) the same amount of time regardless of how much data you move, aka $O(1)$. 
+Yes, you read right, trucks. Amazon sends a truck and physically loads the customer's data all at once. It takes the drives from the customer to it's datacenters with a service they call [AWS Snowball](https://aws.amazon.com/snowball/), and it takes (roughly) the same amount of time regardless of how much data you move, aka $O(1)$.
 
 I found this very clever and funny, moving the drives physically would have to be faster at some point, and Amazon has clearly found themeselves past the point in the previous graph, where physically moving the drives is now faster than transfering the data through the internet.
 

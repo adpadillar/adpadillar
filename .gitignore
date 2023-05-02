@@ -1,5 +1,6 @@
 # build output
 dist/
+__unconfig_astro.config.mjs
 
 # generated types
 .astro/
