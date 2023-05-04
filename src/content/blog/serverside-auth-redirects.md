@@ -1,5 +1,5 @@
 ---
-title: Writing a Typesafe getServerSideProps Wrapper for Server Side Auth Redirects
+title: Writing a Typesafe getServerSideProps Wrapper for Auth Redirects
 publishDate: May 3, 2023
 description: I have been learning more about Typescript recently, and I wanted to practice some of the concepts I have been learning to write a typesafe wrapper for getServerSideProps that redirects to a login page if the user is not authenticated.
 ---
