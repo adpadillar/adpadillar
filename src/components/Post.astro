@@ -10,7 +10,7 @@ const { post } = Astro.props;
 ---
 
 <a rel="prefetch" href={`/${post.slug}`} class="group">
-  <div class="md:pb-8 pb-12">
+  <div class="md:pt-8 pt-12">
     <p class="dark:text-gray-300 text-gray-700 font-light text-sm">
       {
         post.data.publishDate.toLocaleDateString("en-US", {
