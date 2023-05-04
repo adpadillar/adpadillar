@@ -28,7 +28,7 @@ const allPosts = await getCollection("blog");
               (a, b) =>
                 b.data.publishDate.getTime() - a.data.publishDate.getTime()
             )
-            .map((post) => <Post post={post} />)
+            .map((post, idx) => <Post post={post} first={idx === 0} />)
         }
       </div>
     </div>
