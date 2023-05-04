@@ -4,6 +4,7 @@ specifiers:
   '@astrojs/mdx': ^0.15.1
   '@astrojs/prefetch': ^0.1.1
   '@astrojs/react': ^2.0.2
+  '@astrojs/rss': ^2.4.1
   '@astrojs/sitemap': ^1.2.2
   '@astrojs/tailwind': ^3.0.0
   '@tailwindcss/typography': ^0.5.9
@@ -24,6 +25,7 @@ dependencies:
   '@astrojs/mdx': 0.15.1_astro@2.0.2
   '@astrojs/prefetch': 0.1.1
   '@astrojs/react': 2.0.2_fxtgt6bjwd6p4cwoordejim2zi
+  '@astrojs/rss': 2.4.1
   '@astrojs/sitemap': 1.2.2
   '@astrojs/tailwind': 3.0.0_uhsc6pehih5huiqhsy5i7sy5um
   '@types/react': 18.0.27
@@ -158,6 +160,13 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@astrojs/rss/2.4.1:
+    resolution: {integrity: sha512-c+j6Dwxc/t50/v7xhM88RKbxh9SjaQMw0IdLeeOqQAdcLT2Me7nUUWwx0BbPnu6RO0YxT5Up1Sl/OdrA60tfSw==}
+    dependencies:
+      fast-xml-parser: 4.2.2
+      kleur: 4.1.5
     dev: false
 
   /@astrojs/sitemap/1.2.2:
@@ -1701,6 +1710,13 @@ packages:
 
   /fast-levenshtein/2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
+    dev: false
+
+  /fast-xml-parser/4.2.2:
+    resolution: {integrity: sha512-DLzIPtQqmvmdq3VUKR7T6omPK/VCRNqgFlGtbESfyhcH2R4I8EzK1/K6E8PkRCK2EabWrUHK32NjYRbEFnnz0Q==}
+    hasBin: true
+    dependencies:
+      strnum: 1.0.5
     dev: false
 
   /fastq/1.15.0:
@@ -3764,6 +3780,10 @@ packages:
   /strip-final-newline/3.0.0:
     resolution: {integrity: sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw==}
     engines: {node: '>=12'}
+    dev: false
+
+  /strnum/1.0.5:
+    resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
     dev: false
 
   /style-to-object/0.4.1:
