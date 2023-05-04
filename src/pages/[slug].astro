@@ -59,8 +59,6 @@ const { Content } = await post.render();
       </div>
       {post.data.image ? <img src={post.data.image} alt="" /> : <>{(post.data.publishDate || post.data.showReadTime || post.data.author) ? <hr /> : <></>}</>}
       <Content />
-      <hr />
-      <Footer />
     </article>
   </main>
 </Layout>
