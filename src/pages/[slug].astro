@@ -20,7 +20,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Layout title={post.data.title}>
+<Layout title={post.data.title} meta={{ description: post.data.description, title: post.data.title, image: post.data.image }}>
   <main class="flex justify-center items-center my-4 font-serif">
     <article
       class="max-w-2xl min-w-0 px-4 prose dark:prose-invert prose-base md:prose-lg"
