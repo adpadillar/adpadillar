@@ -2,7 +2,7 @@
 import { CollectionEntry, getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import readingTime from "../utils/readingTime";
-import Footer from "../components/Footer.astro";
+
 
 interface Props {
   post: CollectionEntry<"blog">;
@@ -74,3 +74,43 @@ const { Content } = await post.render();
     vertical-align: middle !important;
   }
 </style>
+
+<script>
+  let copyButtonLabel = "Copy";
+  let codeBlocks = Array.from(document.querySelectorAll("pre"));
+
+  for (let codeBlock of codeBlocks) {
+    let wrapper = document.createElement("div");
+    wrapper.className = "relative group";
+
+    let copyButton = document.createElement("button");
+    copyButton.className = "absolute top-0 right-0 px-2 py-1 border border-white rounded-md group-hover:opacity-100 opacity-0 transition-opacity mx-2 my-2.5";
+    copyButton.innerHTML = copyButtonLabel;
+
+    codeBlock.setAttribute("tabindex", "0");
+    codeBlock.appendChild(copyButton);
+    // wrap codebock with relative parent element
+    if (codeBlock.parentNode) {
+      codeBlock.parentNode.insertBefore(wrapper, codeBlock);
+    }
+    wrapper.appendChild(codeBlock);
+
+    copyButton.addEventListener("click", async () => {
+      await copyCode(codeBlock, copyButton);
+    });
+  }
+
+  async function copyCode(block: any, button: any) {
+    let code = block.querySelector("code");
+    let text = code.innerText;
+
+    await navigator.clipboard.writeText(text);
+
+    // visual feedback that task is completed
+    button.innerText = "Copied!";
+
+    setTimeout(() => {
+      button.innerText = copyButtonLabel;
+    }, 700);
+  }
+</script>
