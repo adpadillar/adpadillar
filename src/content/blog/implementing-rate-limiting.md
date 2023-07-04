@@ -1,10 +1,10 @@
 ---
 title: Implementing API Rate Limiting With Upstash and Next.js
 publishDate: May 21, 2023
-description: Ratelimiting is an important concept when developing APIs, but it can also be a little bit scary if you've never done it before. In this article, I'm going to show you how simple it is implement API rate limiting with Upstash and Next.js.
+description: Ratelimiting is an important concept when developing APIs, but it can also be a little scary if you've never done it before. In this article, I'm going to show you how simple it is implement API rate limiting with Upstash and Next.js.
 ---
 
-**Ratelimiting is an important concept when developing APIs, but it can also be a little bit scary if you've never done it before. In this article, I'm going to show you how simple it is implement API rate limiting with Upstash and Next.js.**
+**Ratelimiting is an important concept when developing APIs, but it can also be a little scary if you've never done it before. In this article, I'm going to show you how simple it is implement API rate limiting with Upstash and Next.js.**
 
 ## Introduction
 
