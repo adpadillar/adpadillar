@@ -4,4 +4,4 @@ A computer science student @ Tecnológico de Monterrey, and a software developer
 
 I'm also learning Rust and use the ocasional C/C++, Matlab or Python for school.
 
-Have a look at my [website](https://axelpadilla.me/) and [blog](https://blog.axelpadilla.me/)
+Have a look at my [website](https://axelpadilla.me/) and [blog](https://axelpadilla.me/Blog/posts)
