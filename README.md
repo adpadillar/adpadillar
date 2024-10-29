@@ -4,4 +4,4 @@ A computer science student @ Tecnológico de Monterrey, and a Software Engineer 
 
 For other languages, I also use Python for simple scripts or some standalone backends. Finally, I use the ocasional C/C++, Matlab or Python for school.
 
-Have a look at my [website \(unfinished\)] (https://axelpadilla.me/)
+Have a look at my [(unfinished) website](https://axelpadilla.me/)
